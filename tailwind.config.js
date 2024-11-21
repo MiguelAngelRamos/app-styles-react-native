@@ -9,7 +9,11 @@ module.exports = {
   presets: [require("nativewind/preset")],
   theme: {
     extend: {
-      
+      colors: {
+        primary: '#6200EE',
+        secondary: '#03DAC6',
+        tertiary: '#018786'
+      },
       fontFamily: {
         'rale-black': ['Raleway-Black', 'sans-serif'],
         'rale-light': ['Raleway-Light', 'sans-serif'],

@@ -1,11 +1,19 @@
-import { View, Text } from 'react-native'
+import { View, Text, FlatList } from 'react-native'
 import React from 'react'
-import { SafeAreaView } from 'react-native-safe-area-context'
+import { personajes } from '@/api/personajes';
 
 const CharactersScreen = () => {
   return (
-      <View>
-        <Text>Los personajes</Text>
+      <View className="flex flex-1 px-4">
+        <FlatList 
+          data={personajes}
+          keyExtractor={(personaje) => personaje.id}
+          renderItem={({item}) => (
+            <View>
+              <Text>{item.nombre}</Text>
+            </View>
+          )}
+        />
       </View>
   
   )

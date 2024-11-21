@@ -1,12 +1,13 @@
-import { View, Text, Pressable, PressableProps } from 'react-native'
+import { Text, Pressable, PressableProps } from 'react-native'
 import React from 'react'
 
 interface Props extends PressableProps {
   children: string;
   color?: 'primary'|'secondary'|'tertiary';
   className?: string
+  variant?: 'text-only'
 }
-const ButtonCustom = ({children, color ='primary', onPress, className, onLongPress}:Props) => {
+const ButtonCustom = ({children, color ='primary', onPress, className, variant, onLongPress}:Props) => {
 
  const btnColor = {
   primary: 'bg-primary',
@@ -20,12 +21,23 @@ const ButtonCustom = ({children, color ='primary', onPress, className, onLongPre
   tertiary: 'text-tertiary'
  }[color];
 
+  if(variant === 'text-only') {
+    return (
+    <Pressable
+      className={`p-3 ${className}`}
+      onPress={onPress}
+     >
+      <Text className={`${textColor} text-center`}>{children}</Text>
+     </Pressable>
+     )
+  }
+
   return (
    <Pressable
-    className={`p-3 ${btnColor} ${className}`}
+    className={`p-3  rounded-md ${btnColor} ${className}`}
    onPress={onPress}
    >
-    <Text className={`text-center ${textColor}`}>{children}</Text>
+    <Text className={`text-white text-center`}>{children}</Text>
    </Pressable>
   )
 }
