@@ -1,5 +1,5 @@
 import { Slot, SplashScreen } from 'expo-router';
-import '../global.css';
+import './global.css';
 import { useEffect } from 'react';
 import { useFonts } from 'expo-font';
 
