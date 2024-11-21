@@ -2,15 +2,13 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
-const index = () => {
+const CharactersScreen = () => {
   return (
-    <SafeAreaView>
       <View>
         <Text>Los personajes</Text>
       </View>
-    </SafeAreaView>
-
+  
   )
 }
 
-export default index;
+export default CharactersScreen;

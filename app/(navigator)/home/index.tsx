@@ -14,6 +14,12 @@ const HomeScreen = () => {
           color="secondary"
         >Characteres
         </ButtonCustom>
+
+        <ButtonCustom
+          onPress={() => router.push('/profile')}
+          color="secondary"
+        >Perfil
+        </ButtonCustom>
      
       </View>
     </SafeAreaView>
