@@ -5,7 +5,12 @@ const NavigatorLayout = () => {
   return (
   <Stack
     screenOptions={{
-      headerShown: true
+      // headerShown: true,
+      headerShadowVisible: false,
+      contentStyle: {
+        backgroundColor: 'white'
+      },
+      animation: 'fade'
     }}
   >
     <Stack.Screen 
