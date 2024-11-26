@@ -14,7 +14,6 @@ export const fetchCharacters = async (): Promise<ICharacter[]> => {
     throw error;
   }
 };
-
 // Función para obtener el detalle de un personaje
 export const fetchCharacterById = async (id: string): Promise<ICharacter> => {
   try {
