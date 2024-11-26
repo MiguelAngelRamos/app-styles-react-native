@@ -17,6 +17,13 @@ const HomeScreen = () => {
         </ButtonCustom>
 
         <ButtonCustom
+          onPress={() => router.push('/personajes')}
+          className="mb-10"
+          color="secondary"
+        >Personajes
+        </ButtonCustom>
+
+        <ButtonCustom
           onPress={() => router.push('/profile')}
           className="mb-10"
           color="primary"
