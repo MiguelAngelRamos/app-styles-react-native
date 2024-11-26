@@ -1,6 +1,7 @@
 import { View, Text, FlatList } from 'react-native'
 import React from 'react'
 import { personajes } from '@/api/personajes';
+import { Link } from 'expo-router';
 
 const CharactersScreen = () => {
   return (
@@ -9,8 +10,11 @@ const CharactersScreen = () => {
           data={personajes}
           keyExtractor={(personaje) => personaje.id}
           renderItem={({item}) => (
-            <View>
-              <Text>{item.nombre}</Text>
+            <View className="mt-10">
+              <Text className="text-2xl font-rale-black">{item.nombre}</Text>
+              <View>
+                <Link href={`/characters/${item.id}`}>Ir a personaje</Link>
+              </View>
             </View>
           )}
         />
