@@ -4,7 +4,7 @@ import { Redirect } from 'expo-router';
 
 const App = () => {
 
-  return <Redirect href="/(navigator)/home"/>;
+  return <Redirect href="/drawer"/>;
   // return (
   //   <SafeAreaView>
   //     <Text className="text-5xl font-rale-black">React Native</Text>

@@ -5,18 +5,25 @@ import { Drawer } from 'expo-router/drawer';
 const DrawerLayout = () => {
   return (
     <Drawer>
-      <Drawer.Screen
-        name="index" // This is the name of the page and must match the url from root
+    <Drawer.Screen
+        name="tabs" // This is the name of the page and must match the url from root
         options={{
-          drawerLabel: 'Home',
-          title: 'overview',
+          drawerLabel: 'Tabs',
+          title: 'Tabs-Stacks',
         }}
       />
       <Drawer.Screen
-        name="user/[id]" // This is the name of the page and must match the url from root
+        name="user/index" // This is the name of the page and must match the url from root
         options={{
           drawerLabel: 'User',
-          title: 'overview',
+          title: 'User Screen',
+        }}
+      />
+      <Drawer.Screen
+        name="settings/index" // This is the name of the page and must match the url from root
+        options={{
+          drawerLabel: 'Settings',
+          title: 'Settings Screen',
         }}
       />
   </Drawer>

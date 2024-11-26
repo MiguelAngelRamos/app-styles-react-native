@@ -48,7 +48,7 @@ const CharactersScreen = () => {
             <View className="flex flex-row justify-between items-center mt-4">
               <Text className="text-sm text-gray-400">{item.status}</Text>
               <Link
-                href={`/(navigator)/personajes/${item.id}`}
+                href={`/drawer/tabs/(navigator)/personajes/${item.id}`}
                 className="text-blue-500"
               >
                 Ver detalles

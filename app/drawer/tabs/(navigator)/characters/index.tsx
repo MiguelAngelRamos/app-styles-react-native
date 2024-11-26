@@ -13,7 +13,7 @@ const CharactersScreen = () => {
             <View className="mt-10">
               <Text className="text-2xl font-rale-black">{item.nombre}</Text>
               <View>
-                <Link href={`/characters/${item.id}`}>Ir a personaje</Link>
+                <Link href={`/drawer/tabs/characters/${item.id}`}>Ir a personaje</Link>
               </View>
             </View>
           )}
