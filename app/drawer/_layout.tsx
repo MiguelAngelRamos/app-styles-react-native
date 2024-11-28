@@ -2,10 +2,12 @@ import { View, Text } from 'react-native';
 import React from 'react';
 import { Drawer } from 'expo-router/drawer';
 import { Ionicons } from '@expo/vector-icons';
+import ContentDrawer from '@/components/shared/ContentDrawer';
 
 const DrawerLayout = () => {
   return (
     <Drawer
+      drawerContent={ContentDrawer}
       screenOptions={{
         headerShown: true,
         overlayColor: 'rgba(0,0,0,0.4)',
