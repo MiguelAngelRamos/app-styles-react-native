@@ -21,6 +21,6 @@ export const fetchCharacterById = async (id: string): Promise<ICharacter> => {
     return response.data; // Retorna los detalles del personaje
   } catch (error) {
     console.error(`Error al traer el personaje con ID ${id}:`, error);
-    throw error;
+    throw error; 
   }
 };
